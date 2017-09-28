@@ -21,3 +21,11 @@ void displayHuman(Human h) {
 void calculateHumanBMI(Human *h) {
     h->bmi = h->weight / (h->height * h->height);
 }
+
+Human initHuman(int a, float wt, float ht)
+{
+    Human temp = { .age = a, .weight = wt, .height = ht};
+    return temp;    //Return a copy
+}
+
+

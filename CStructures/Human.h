@@ -19,5 +19,6 @@ typedef struct {
 
 void displayHuman(Human h);
 void calculateHumanBMI(Human *h);
+Human initHuman(int a, float wt, float ht);
 
 #endif /* Human_h */

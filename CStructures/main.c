@@ -15,32 +15,28 @@
 
 int main(int argc, const char * argv[]) {
 
-    //Create a variable of type human
-    Human person1;
     
-    //Set properties
-    person1.age = 35;
-    person1.weight = 80.0;
-    person1.height = 1.81;
+    //Initialise and set properties
+    Human person1 = initHuman(35, 80.0, 1.81);
     //Caluclate BMI
     calculateHumanBMI(&person1); //INPLACE - PERFORM FUNCTION ON person1 INSTANCE
     //Display
     displayHuman(person1);
     
     //Designated initialiser
-    Human person2 = { .age = 45, .weight = 97.0, .height = 1.6, .bmi = 0.0} ;
+    Human person2 = initHuman(45, 97.0, 1.6);
     calculateHumanBMI(&person2); //INPLACE - PERFORM FUNCTION ON person2 INSTANCE
     displayHuman(person2);
     
     //COMMON ERRORS
     
     //FORGOT TO INITIALISE
-    Human person3;
+    Human person3 = initHuman(65, 102.0, 1.9);
     calculateHumanBMI(&person3);
     displayHuman(person3);
     
     //NOT YET CALCULATED BMI
-    Human person4 = { .age = 21, .weight = 65.0, .height = 1.5, .bmi = 0.0} ;
+    Human person4 = initHuman(21, 65.0, 1.5);
     displayHuman(person4);
 
     //UPDATE without recalculation
