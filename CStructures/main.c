@@ -30,7 +30,7 @@ int main(int argc, const char * argv[]) {
     
     //COMMON ERRORS
     
-    //FORGOT TO INITIALISE
+    //FORGOT TO INITIALISE - FIXED
     Human person3 = initHuman(65, 102.0, 1.9);
     calculateHumanBMI(&person3);
     displayHuman(person3);
