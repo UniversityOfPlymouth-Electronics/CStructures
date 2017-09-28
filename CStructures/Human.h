@@ -17,5 +17,6 @@ struct Human {
     float bmi;
 };
 
+void displayHuman(struct Human h);
 
 #endif /* Human_h */
