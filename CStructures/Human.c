@@ -25,6 +25,7 @@ void calculateHumanBMI(Human *h) {
 Human initHuman(int a, float wt, float ht)
 {
     Human temp = { .age = a, .weight = wt, .height = ht};
+    calculateHumanBMI(&temp);
     return temp;    //Return a copy
 }
 

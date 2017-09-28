@@ -35,7 +35,7 @@ int main(int argc, const char * argv[]) {
     calculateHumanBMI(&person3);
     displayHuman(person3);
     
-    //NOT YET CALCULATED BMI
+    //NOT YET CALCULATED BMI - FIXED
     Human person4 = initHuman(21, 65.0, 1.5);
     displayHuman(person4);
 
