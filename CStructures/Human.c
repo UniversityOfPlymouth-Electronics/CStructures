@@ -18,8 +18,6 @@ void displayHuman(struct Human h) {
     }
 }
 
-struct Human calculateHumanBMI(struct Human h) {
-    struct Human result = h;    //Make a copy
-    result.bmi = result.weight / (result.height * result.height);
-    return result;
+void calculateHumanBMI(struct Human *h) {
+    h->bmi = h->weight / (h->height * h->height);
 }
