@@ -32,14 +32,19 @@ int main(int argc, const char * argv[]) {
     calculateHumanBMI(&person2); //INPLACE - PERFORM FUNCTION ON person2 INSTANCE
     displayHuman(person2);
     
-    Human person3;                  //FORGOT TO INITIALISE
+    //COMMON ERRORS
+    
+    //FORGOT TO INITIALISE
+    Human person3;
     calculateHumanBMI(&person3);
     displayHuman(person3);
     
+    //NOT YET CALCULATED BMI
     Human person4 = { .age = 21, .weight = 65.0, .height = 1.5, .bmi = 0.0} ;
-    displayHuman(person4);          //NOT YET CALCULATED BMI
+    displayHuman(person4);
 
-    person2.weight = 89.0;          //UPDATE without recalculation
+    //UPDATE without recalculation
+    person2.weight = 89.0;
     displayHuman(person2);
 
     return 0;
