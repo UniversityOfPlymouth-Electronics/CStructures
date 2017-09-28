@@ -21,8 +21,9 @@ int main(int argc, const char * argv[]) {
     //Set properties
     person1.age = 35;
     person1.weight = 87.0;
-    person1.height = 181.0;
+    person1.height = 1.81;
     person1.bmi = person1.weight / (person1.height * person1.height);
+    
     printf("Weight: %f, Height: %f, BodyMassIndex: %f\n", person1.weight, person1.height, person1.bmi);
     
     //Designated initialiser
