@@ -23,13 +23,13 @@ int main(int argc, const char * argv[]) {
     person1.weight = 80.0;
     person1.height = 1.81;
     //Caluclate BMI
-    calculateHumanBMI(&person1);
+    calculateHumanBMI(&person1); //INPLACE - PERFORM FUNCTION ON person1 INSTANCE
     //Display
     displayHuman(person1);
     
     //Designated initialiser
     Human person2 = { .age = 45, .weight = 97.0, .height = 1.6, .bmi = 0.0} ;
-    calculateHumanBMI(&person2);
+    calculateHumanBMI(&person2); //INPLACE - PERFORM FUNCTION ON person2 INSTANCE
     displayHuman(person2);
     
     return 0;
