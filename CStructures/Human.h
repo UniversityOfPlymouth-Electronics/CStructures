@@ -10,14 +10,14 @@
 #define Human_h
 
 #include <stdio.h>
-struct Human {
+typedef struct {
     unsigned int age;
     float weight;
     float height;
     float bmi;
-};
+} Human;
 
-void displayHuman(struct Human h);
-void calculateHumanBMI(struct Human *h);
+void displayHuman(Human h);
+void calculateHumanBMI(Human *h);
 
 #endif /* Human_h */

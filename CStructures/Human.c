@@ -8,7 +8,7 @@
 
 #include "Human.h"
 
-void displayHuman(struct Human h) {
+void displayHuman(Human h) {
     printf("Weight: %f, Height: %f, BodyMassIndex: %f", h.weight, h.height, h.bmi);
     //Print a * for a BMI greater than 25
     if (h.bmi > 25.0) {
@@ -18,6 +18,6 @@ void displayHuman(struct Human h) {
     }
 }
 
-void calculateHumanBMI(struct Human *h) {
+void calculateHumanBMI(Human *h) {
     h->bmi = h->weight / (h->height * h->height);
 }

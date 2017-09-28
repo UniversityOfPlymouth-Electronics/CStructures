@@ -16,7 +16,7 @@
 int main(int argc, const char * argv[]) {
 
     //Create a variable of type human
-    struct Human person1;
+    Human person1;
     
     //Set properties
     person1.age = 35;
@@ -28,7 +28,7 @@ int main(int argc, const char * argv[]) {
     displayHuman(person1);
     
     //Designated initialiser
-    struct Human person2 = { .age = 45, .weight = 97.0, .height = 1.6, .bmi = 0.0} ;
+    Human person2 = { .age = 45, .weight = 97.0, .height = 1.6, .bmi = 0.0} ;
     calculateHumanBMI(&person2);
     displayHuman(person2);
     
