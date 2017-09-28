@@ -12,31 +12,18 @@
 int main(int argc, const char * argv[]) {
 
     //Create a variable of type human
-    Human person1;
+    struct Human person1;
     
     //Set properties
     person1.age = 35;
     person1.weight = 87.0;
     person1.height = 181.0;
     
-    //Calculate the bmi and display the results
-    calculateBmi(&person1); //Pass by reference
-    displayHuman(person1);  //Pass by value
-    
     //Designated initialiser
-    Human person2 = { .age = 45, .weight = 97.0, .height = 1.6, .bmi = 0.0} ;
-    displayHuman(person2);
+    struct Human person2 = { .age = 45, .weight = 97.0, .height = 1.6, .bmi = 0.0} ;
     
     //Some possible errors (that might scare someone)
-    Human person3;
-    calculateBmi(&person3);
-    displayHuman(person3);
-    
-    //Better, but not perfect
-    Human person4 = initHuman(27, 80.0, 1.79);
-    displayHuman(person4);
-    person4.weight = 85.0;
-    displayHuman(person4);  //Not good - forgot to update
+    struct Human person3;
     
     return 0;
 }
