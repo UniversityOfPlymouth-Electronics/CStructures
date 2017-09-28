@@ -6,6 +6,10 @@
 //  Copyright © 2017 Nicholas Outram. All rights reserved.
 //
 
+//**************************************************************
+//THIS USES GIT VERSION CONTROL TO SHOW PROGRESSIVE IMPROVEMENTS
+//**************************************************************
+
 #include <stdio.h>
 #include "Human.h"
 
@@ -18,12 +22,14 @@ int main(int argc, const char * argv[]) {
     person1.age = 35;
     person1.weight = 87.0;
     person1.height = 181.0;
+    person1.bmi = person1.weight / (person1.height * person1.height);
+    printf("Weight: %f, Height: %f, BodyMassIndex: %f\n", person1.weight, person1.height, person1.bmi);
     
     //Designated initialiser
     struct Human person2 = { .age = 45, .weight = 97.0, .height = 1.6, .bmi = 0.0} ;
-    
-    //Some possible errors (that might scare someone)
-    struct Human person3;
+    person2.bmi = person2.weight / (person2.height * person2.height);
+    printf("Weight: %f, Height: %f, BodyMassIndex: %f\n", person2.weight, person2.height, person2.bmi);
+
     
     return 0;
 }
