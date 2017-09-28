@@ -29,4 +29,26 @@ Human initHuman(int a, float wt, float ht)
     return temp;    //Return a copy
 }
 
+//Accessors
+int updateAge(Human *h, int a) {
+    int prev = h->age;
+    h->age = a;
+    return prev;    //Return a copy of the previous value (can be useful)
+}
+float updateWeight(Human *h, float wt) {
+    float prev = h->weight;
+    h->weight = wt;
+    calculateHumanBMI(h);      //NOTE - the bmi is updated when you change the weight
+    return prev;
+}
+float updateHeight(Human *h, float ht) {
+    float prev = h->height;
+    h->height = ht;
+    calculateHumanBMI(h);
+    return prev;
+}
+
+
+
+
 

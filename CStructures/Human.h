@@ -20,5 +20,8 @@ typedef struct {
 void displayHuman(Human h);
 void calculateHumanBMI(Human *h);
 Human initHuman(int a, float wt, float ht);
+int updateAge(Human *h, int a);
+float updateWeight(Human *h, float wt);
+float updateHeight(Human *h, float ht);
 
 #endif /* Human_h */

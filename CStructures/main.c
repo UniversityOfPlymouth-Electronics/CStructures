@@ -40,7 +40,8 @@ int main(int argc, const char * argv[]) {
     displayHuman(person4);
 
     //UPDATE without recalculation
-    person2.weight = 89.0;
+//    person2.weight = 89.0;
+    updateWeight(&person2, 89.0);
     displayHuman(person2);
 
     return 0;
