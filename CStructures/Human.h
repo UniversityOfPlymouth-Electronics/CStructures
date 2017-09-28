@@ -18,5 +18,6 @@ struct Human {
 };
 
 void displayHuman(struct Human h);
+struct Human calculateHumanBMI(struct Human h);
 
 #endif /* Human_h */

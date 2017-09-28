@@ -17,3 +17,9 @@ void displayHuman(struct Human h) {
         printf("\n");
     }
 }
+
+struct Human calculateHumanBMI(struct Human h) {
+    struct Human result = h;    //Make a copy
+    result.bmi = result.weight / (result.height * result.height);
+    return result;
+}
