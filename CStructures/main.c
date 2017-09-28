@@ -22,8 +22,9 @@ int main(int argc, const char * argv[]) {
     person1.age = 35;
     person1.weight = 87.0;
     person1.height = 1.81;
+    //Caluclate BMI
     person1.bmi = person1.weight / (person1.height * person1.height);
-    
+    //Display
     printf("Weight: %f, Height: %f, BodyMassIndex: %f\n", person1.weight, person1.height, person1.bmi);
     
     //Designated initialiser
